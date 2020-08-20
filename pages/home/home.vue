@@ -8,14 +8,17 @@
 		</view>
 	</view>
 		<!-- 轮播图 -->
-		<swiper indicator-dots autoplay :interval="3000" :duration="1000">
+		<swiper indicator-dots autoplay indicator-color="rgbs(255,255,255,.5)" indicator-active-color="#fff" :interval="3000" :duration="1000">
 			<swiper-item v-for="item in swiperList" :key="goods_id">
 				<image :src="item.image_src" ></image>
 			</swiper-item>
-	
 		</swiper>
 		<!-- 子导航 -->
-		<view class="sub-nav"></view>
+		<view class="sub-nav">
+			<view class="nav-list" v-for="(item,index) in subNavList" :key="index">
+				<image :src="item.image_src"></image>
+			</view>
+		</view>
 		<!-- 时尚女装 -->
 		<view class="clothes">
 		</view>
@@ -32,16 +35,32 @@
 	export default {
 		data() {
 			return {
-				swiperList:[]
+				// 轮播图列表
+				swiperList:[],
+				// 子导航列表
+				subNavList:[],
+				// 楼层列表
+				floorList:[]
 			}
 		},
 		created() {
 			this.getSwiperList()
+			this.getsubNavList()
 		},
 		methods:{
 			async getSwiperList(){
 				this.swiperList = await this.$request({
 					url:'/api/public/v1/home/swiperdata'
+				})
+			},
+			async getsubNavList(){
+				this.subNavList = await this.$request({
+					url:'/api/public/v1/home/catitems'
+				})
+			},
+			async getFloorList(){
+				this.floorList = await this.$request({
+					url:'/api/public/v1/home/floordata'
 				})
 			}
 		}
@@ -80,7 +99,17 @@
 			}
 		}
 		/* 子导航 */
-		.sub-nav{}
+		.sub-nav{
+			display: flex;
+			.nav-list{
+				width: 25%;
+				text-align: center;
+				image{
+					width: 128rpx;
+					height: 140rpx;
+				}
+			}
+		}
 		/* 时尚女装 */
 		.clothes{}
 		/* 户外运动 */

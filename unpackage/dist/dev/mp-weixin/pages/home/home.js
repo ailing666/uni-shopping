@@ -166,20 +166,39 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
-      swiperList: [] };
+      // 轮播图列表
+      swiperList: [],
+      // 子导航列表
+      subNavList: [],
+      // 楼层列表
+      floorList: [] };
 
   },
   created: function created() {
     this.getSwiperList();
+    this.getsubNavList();
   },
   methods: {
     getSwiperList: function getSwiperList() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
                   _this.$request({
                     url: '/api/public/v1/home/swiperdata' }));case 2:_this.swiperList = _context.sent;case 3:case "end":return _context.stop();}}}, _callee);}))();
+
+    },
+    getsubNavList: function getsubNavList() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
+                  _this2.$request({
+                    url: '/api/public/v1/home/catitems' }));case 2:_this2.subNavList = _context2.sent;case 3:case "end":return _context2.stop();}}}, _callee2);}))();
+
+    },
+    getFloorList: function getFloorList() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (
+                  _this3.$request({
+                    url: '/api/public/v1/home/floordata' }));case 2:_this3.floorList = _context3.sent;case 3:case "end":return _context3.stop();}}}, _callee3);}))();
 
     } } };exports.default = _default;
 
