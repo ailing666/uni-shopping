@@ -7,12 +7,14 @@
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "商城",
+    "navigationBarBackgroundColor": "#eb4450",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#eb4450",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -39,6 +41,11 @@
         "selectedIconPath": "/static/tabs/icon_me_active@3x.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": ""
+    }
   },
   "usingComponents": {}
 }

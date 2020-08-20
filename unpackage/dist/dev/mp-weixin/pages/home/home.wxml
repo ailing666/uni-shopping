@@ -1,1 +1,1 @@
-<view class="home _div">home</view>
+<view class="home"><view class="header"><view class="search"><icon type="search" size="20"></icon><text>搜索</text></view></view><swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}"><block wx:for="{{swiperList}}" wx:for-item="item" wx:for-index="__i0__" wx:key="*this"><swiper-item><image src="{{item.image_src}}"></image></swiper-item></block></swiper><view class="sub-nav"></view><view class="clothes"></view><view class="sports"></view><view class="accessories"></view></view>
