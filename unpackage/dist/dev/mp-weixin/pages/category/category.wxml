@@ -1,1 +1,1 @@
-<view class="category _div">category</view>
+<view class="category _div"><view class="list"><block wx:for="{{categoriesList}}" wx:for-item="item" wx:for-index="index" wx:key="car_id"><view><text data-event-opts="{{[['tap',[['carClick',[index]]]]]}}" class="{{[(activeIndex===index)?'active':'']}}" bindtap="__e">{{item.cat_name}}</text></view></block></view><view class="details"></view></view>
