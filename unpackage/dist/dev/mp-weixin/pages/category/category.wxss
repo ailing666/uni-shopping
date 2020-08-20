@@ -1,3 +1,8 @@
+.category {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
 .category .list {
   width: 200rpx;
   background-color: #f5f5f5;
@@ -18,5 +23,23 @@
   color: #ff2d4a;
   font-weight: 700;
   border-left: 6rpx solid #ff3954;
+}
+.category .details {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.category .details .details-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.category .details .details-item view {
+  width: 33.33%;
+}
+.category .details .details-item view image {
+  width: 100%;
 }
 
