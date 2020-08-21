@@ -6,9 +6,10 @@
 			</view>
 		</view>
 		<view class="details">
+			<image class="title-img" src="../../static/images/titleImage.png" mode=""></image>
 			<view v-for="(item,index) in categoriesList[activeIndex].children" :key="cat_id">
 				<view class="details-title">
-					<text>/ {{item.cat_name}} /</text>
+					<text class="cat-name">{{item.cat_name}}</text>
 				</view>
 				<view class="details-item">
 					<view v-for="(item2,index2) in item.children" :key="cat_id">
@@ -52,6 +53,7 @@
 		.list {
 			width: 200rpx;
 			background-color: #f5f5f5;
+			color: #434345;
 
 			view {
 				text-align: center;
@@ -61,7 +63,7 @@
 					display: inline-block;
 					width: 200rpx;
 					height: 100rpx;
-					padding: 30rpx;
+					line-height: 100rpx;
 					box-sizing: border-box;
 				}
 			}
@@ -76,15 +78,45 @@
 
 		.details {
 			flex: 1;
+			color: #434345;
+.title-img{
+	height: 200rpx;
+	width: 93%;
+	margin: 20rpx;
+}
+			.details-title {
+				width: 100%;
+				text-align: center;
+				margin: 40rpx 0;
+				&::before {
+					content: "/　　　";
+					color: #e3e3e3;
+				}
+
+				&::after {
+					content: "　　　/";
+					color: #e3e3e3;
+				}
+
+				.cat-name {
+					color: #434345;
+				}
+			}
 
 			.details-item {
-				display:flex;
+				display: flex;
 				flex-wrap: wrap;
-				 view {
+				align-items: center;
+
+				view {
 					width: 33.33%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
 
 					image {
-						width: 100%
+						width: 100rpx;
+						height: 130rpx;
 					}
 				}
 			}

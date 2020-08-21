@@ -6,6 +6,7 @@
 .category .list {
   width: 200rpx;
   background-color: #f5f5f5;
+  color: #434345;
 }
 .category .list view {
   text-align: center;
@@ -15,7 +16,7 @@
   display: inline-block;
   width: 200rpx;
   height: 100rpx;
-  padding: 30rpx;
+  line-height: 100rpx;
   box-sizing: border-box;
 }
 .category .list .active {
@@ -28,6 +29,28 @@
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
+  color: #434345;
+}
+.category .details .title-img {
+  height: 200rpx;
+  width: 93%;
+  margin: 20rpx;
+}
+.category .details .details-title {
+  width: 100%;
+  text-align: center;
+  margin: 40rpx 0;
+}
+.category .details .details-title::before {
+  content: "/　　　";
+  color: #e3e3e3;
+}
+.category .details .details-title::after {
+  content: "　　　/";
+  color: #e3e3e3;
+}
+.category .details .details-title .cat-name {
+  color: #434345;
 }
 .category .details .details-item {
   display: -webkit-box;
@@ -35,11 +58,25 @@
   display: flex;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .category .details .details-item view {
   width: 33.33%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .category .details .details-item view image {
-  width: 100%;
+  width: 100rpx;
+  height: 130rpx;
 }
 
