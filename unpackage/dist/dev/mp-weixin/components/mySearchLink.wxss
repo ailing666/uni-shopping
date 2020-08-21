@@ -1,0 +1,23 @@
+.header.data-v-6bcfac49 {
+  padding: 20rpx 16rpx;
+  background-color: #eb4450;
+}
+.header .search.data-v-6bcfac49 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-color: #fff;
+  height: 60rpx;
+  color: #bbb;
+  border-radius: 8rpx;
+}
+.header .search icon.data-v-6bcfac49 {
+  margin-right: 16rpx;
+}
+

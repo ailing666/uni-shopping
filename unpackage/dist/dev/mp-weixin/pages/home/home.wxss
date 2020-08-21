@@ -3,29 +3,6 @@
   /* 子导航 */
   float: left;
 }
-.home .header {
-  padding: 20rpx 16rpx;
-  background-color: #eb4450;
-  /* 搜索区域 */
-}
-.home .header .search {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  background-color: #fff;
-  height: 60rpx;
-  color: #bbb;
-  border-radius: 8rpx;
-}
-.home .header .search icon {
-  margin-right: 16rpx;
-}
 .home swiper {
   width: 100vw;
   height: 340rpx;
@@ -54,20 +31,22 @@
   margin: 10rpx 0;
 }
 .home .floor .title image {
-  height: 56rpx;
+  width: 100vw;
+  height: 88rpx;
 }
 .home .floor .content {
   float: left;
 }
 .home .floor .content image {
   width: 232rpx;
+  height: 386rpx;
 }
 .home .floor .content:nth-child(2) {
   margin-right: 10rpx;
 }
 .home .floor .content:nth-child(n+3) {
   width: 232rpx;
-  height: 235rpx;
+  height: 188rpx;
   margin-right: 10rpx;
 }
 .home .floor .content:nth-child(n+3) image {

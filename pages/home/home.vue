@@ -1,12 +1,6 @@
 <template>
 	<view class="home">
-		<!-- 搜索区域 -->
-		<view class="header">
-			<view class="search">
-				<icon type="search" size="20" />
-				<text>搜索</text>
-			</view>
-		</view>
+		<mySearchLink></mySearchLink>
 		<!-- 轮播图 -->
 		<swiper indicator-dots autoplay indicator-color="rgbs(255,255,255,.5)" indicator-active-color="#fff" :interval="3000"
 		 :duration="1000">
@@ -33,7 +27,9 @@
 </template>
 
 <script>
+import mySearchLink from '../../components/mySearchLink.vue'
 	export default {
+		components:{mySearchLink},
 		data() {
 			return {
 				// 轮播图列表
@@ -69,28 +65,9 @@
 	}
 </script>
 
+
 <style lang="less">
 	.home {
-		.header {
-			padding: 20rpx 16rpx;
-			background-color: #eb4450;
-
-			/* 搜索区域 */
-			.search {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				background-color: #fff;
-				height: 60rpx;
-				color: #bbb;
-				border-radius: 8rpx;
-
-				icon {
-					margin-right: 16rpx;
-				}
-			}
-		}
-
 		/* 轮播图 */
 		swiper {
 			width: 100vw;
@@ -126,7 +103,8 @@
 			.title {
 				margin: 10rpx 0;
 				image {
-					height: 56rpx;
+					width: 100vw;
+					height: 88rpx;
 				}
 			}
 
@@ -135,6 +113,7 @@
 
 				image {
 					width: 232rpx;
+					height: 386rpx;
 				}
 
 				&:nth-child(2) {
@@ -143,7 +122,7 @@
 
 				&:nth-child(n+3) {
 					width: 232rpx;
-					height: 235rpx;
+					height: 188rpx;
 
 					image {
 						width: 100%;
