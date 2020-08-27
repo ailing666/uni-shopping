@@ -178,7 +178,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     toSearchDetails: function toSearchDetails(val) {
       uni.navigateTo({
-        url: '/pages/searchDetails/searchDetails?name=' + val });
+        url: '/pages/searchDetails/searchDetails?catName=' + val });
 
     },
     getCategoriesList: function getCategoriesList() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (

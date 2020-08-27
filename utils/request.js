@@ -1,6 +1,7 @@
 const BASE_URL = 'https://api-ugo-dev.itheima.net'
  function request({
 	 url,
+	 data,
 	 showLoading=true
  }){
 	return new Promise((resolve,reject)=>{
@@ -13,6 +14,7 @@ const BASE_URL = 'https://api-ugo-dev.itheima.net'
 		}
 		uni.request({
 			url:BASE_URL+url,
+			data,
 			success:res=>{
 				let {meta,message} = res.data
 				if(meta.status === 200){

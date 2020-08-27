@@ -7693,7 +7693,8 @@ module.exports = g;
 function request(_ref)
 
 
-{var url = _ref.url,_ref$showLoading = _ref.showLoading,showLoading = _ref$showLoading === void 0 ? true : _ref$showLoading;
+
+{var url = _ref.url,data = _ref.data,_ref$showLoading = _ref.showLoading,showLoading = _ref$showLoading === void 0 ? true : _ref$showLoading;
   return new Promise(function (resolve, reject) {
     if (showLoading) {
       uni.showToast({
@@ -7704,6 +7705,7 @@ function request(_ref)
     }
     uni.request({
       url: BASE_URL + url,
+      data: data,
       success: function success(res) {var _res$data =
         res.data,meta = _res$data.meta,message = _res$data.message;
         if (meta.status === 200) {

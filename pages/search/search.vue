@@ -54,9 +54,9 @@
 			},
 			// 跳转搜索列表页面
 			toSearchList(inputVal) {
-
+				console.log('inputVal',inputVal);
 				uni.navigateTo({
-					url: '/pages/search_list/search_list?catName=' + inputVal
+					url: '/pages/searchDetails/searchDetails?catName=' + inputVal
 				});
 			}
 		}

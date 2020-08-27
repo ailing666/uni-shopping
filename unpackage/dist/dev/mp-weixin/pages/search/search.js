@@ -186,9 +186,9 @@ var HISTORY_KEY = 'history';var _default =
     },
     // 跳转搜索列表页面
     toSearchList: function toSearchList(inputVal) {
-
+      console.log('inputVal', inputVal);
       uni.navigateTo({
-        url: '/pages/search_list/search_list?catName=' + inputVal });
+        url: '/pages/searchDetails/searchDetails?catName=' + inputVal });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

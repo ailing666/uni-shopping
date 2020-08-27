@@ -46,7 +46,7 @@
 			},
 			toSearchDetails(val) {
 				uni.navigateTo({
-					url: '/pages/searchDetails/searchDetails?name=' + val
+					url: '/pages/searchDetails/searchDetails?catName=' + val
 				})
 			},
 			async getCategoriesList() {
