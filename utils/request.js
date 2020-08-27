@@ -1,4 +1,4 @@
- const BASE_URL = 'https://www.uinav.com'
+const BASE_URL = 'https://api-ugo-dev.itheima.net'
  function request({
 	 url,
 	 showLoading=true

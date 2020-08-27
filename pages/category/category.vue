@@ -9,12 +9,12 @@
 			</view>
 			<view class="details">
 				<image class="title-img" src="../../static/images/titleImage.png" mode=""></image>
-				<view v-for="(item,index) in categoriesList[activeIndex].children" :key="cat_id">
+				<view v-for="(item,index) in categoriesList[activeIndex].children" :key="item.cat_id">
 					<view class="details-title" v-if="item.children">
 						<text>/<text class="cat-name">{{item.cat_name}}</text>/</text>
 					</view>
 					<view class="details-item">
-						<view v-for="(item2,index2) in item.children" :key="cat_id">
+						<view v-for="(item2,index2) in item.children" :key="item2.cat_id" @click="toSearchDetails(item2.cat_name)">
 							<image :src="item2.cat_icon" mode=""></image>
 							<text>{{item2.cat_name}}</text>
 						</view>
@@ -37,12 +37,17 @@
 				categoriesList: []
 			}
 		},
-		created() {
+		onLoad() {
 			this.getCategoriesList()
 		},
 		methods: {
 			carClick(index) {
 				this.activeIndex = index
+			},
+			toSearchDetails(val) {
+				uni.navigateTo({
+					url: '/pages/searchDetails/searchDetails?name=' + val
+				})
 			},
 			async getCategoriesList() {
 				this.categoriesList = await this.$request({
