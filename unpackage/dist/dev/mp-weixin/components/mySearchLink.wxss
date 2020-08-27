@@ -1,23 +1,28 @@
-.header.data-v-6bcfac49 {
-  padding: 20rpx 16rpx;
+.search-link.data-v-6bcfac49 {
+  height: 100rpx;
   background-color: #eb4450;
+  padding: 20rpx 16rpx;
+  box-sizing: border-box;
 }
-.header .search.data-v-6bcfac49 {
+.search-link .inner.data-v-6bcfac49 {
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  background-color: #fff;
-  height: 60rpx;
-  color: #bbb;
-  border-radius: 8rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
-.header .search icon.data-v-6bcfac49 {
-  margin-right: 16rpx;
+.search-link .inner icon.data-v-6bcfac49 {
+  margin-top: 4rpx;
+}
+.search-link .inner text.data-v-6bcfac49 {
+  margin-left: 16rpx;
+  color: #bbb;
 }
 
