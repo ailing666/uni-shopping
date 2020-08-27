@@ -5,7 +5,8 @@
     "pages/cart/cart",
     "pages/me/me",
     "pages/searchDetails/searchDetails",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/item/item"
   ],
   "subPackages": [],
   "window": {
