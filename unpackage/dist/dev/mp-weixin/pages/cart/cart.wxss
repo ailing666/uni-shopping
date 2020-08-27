@@ -1,0 +1,170 @@
+.iconfont {
+  font-size: 44rpx;
+}
+.title {
+  height: 88rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.title .iconfont {
+  color: #999;
+  margin: 6rpx 12rpx 0 32rpx;
+}
+.goods-item {
+  height: 206rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #ddd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.goods-item .iconfont {
+  color: #eb4450;
+  margin: 0 30rpx;
+}
+.goods-item image {
+  width: 160rpx;
+  height: 160rpx;
+}
+.goods-item .right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin: 0 20rpx 0 18rpx;
+}
+.goods-item .right .btm {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 40rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.goods-item .right .btm .price {
+  color: #eb4450;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.goods-item .right .btm .price > text {
+  font-size: 24px;
+}
+.goods-item .right .btm .goods-num {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.goods-item .right .btm .goods-num button {
+  width: 60rpx;
+  height: 50rpx;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border: 4rpx solid #666;
+}
+.goods-item .right .btm .goods-num text {
+  margin: 0 30rpx;
+}
+.goods-list {
+  position: absolute;
+  bottom: 98rpx;
+  top: 88rpx;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 60rpx;
+  background-color: #f4f4f4;
+}
+.account {
+  height: 98rpx;
+  border-bottom: 1rpx solid #ddd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.account .iconfont {
+  color: #eb4450;
+  margin: 0 30rpx;
+}
+.account .account-btn {
+  width: 230rpx;
+  height: 98rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #eb4450;
+}
+.account .select-all {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.account .select-all .price-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.account .price {
+  margin-right: 20rpx;
+}
+.account .price .num {
+  color: #eb4450;
+}
+.account .price .info {
+  color: #999;
+}
+
